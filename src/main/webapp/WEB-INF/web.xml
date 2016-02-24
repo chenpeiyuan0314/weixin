@@ -7,4 +7,19 @@
     http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   id="WebApp_ID" version="2.5">
   
+  <servlet>
+    <servlet-name>signature</servlet-name>
+    <servlet-class>com.yuan.project.weixin.servlet.CheckSignatureServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>core</servlet-name>
+    <servlet-class>com.yuan.project.weixin.servlet.CoreServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>core</servlet-name>
+    <url-pattern>/core</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
